@@ -9,7 +9,7 @@ GAME RULES:
 
 */
 
-var scores, roundScore, activePlayer, gameOn;
+var scores, roundScore, activePlayer, gameOn, rulesPopup;
 // start the game
 init();
 
@@ -43,7 +43,7 @@ document.querySelector('.btn-hold').addEventListener('click', function () {
         // update UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         // check if player won a game (reached 100 points)
-        if (scores[activePlayer] >= 20) {
+        if (scores[activePlayer] >= 100) {
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             // hide the dice
             document.getElementById('dice-1').style.display = 'none';
@@ -109,5 +109,33 @@ function hideDice() {
     document.getElementById('dice-2').style.display = 'none';
 };
 
+function displayRules() {
+    document.getElementById('rules').style.display = 'none';
+    document.getElementById('btn-rules').style.display = 'none';
+    document.getElementsByClassName("close")[0];
 
-// pridat trophy a zvuk pro vyhraneho
+    
+};
+
+// popup with rules
+rulesPopup = document.getElementById('rules');
+
+document.querySelector('.btn-rules').addEventListener('click', function () {
+    rulesPopup.style.display = 'block';
+});
+
+document.querySelector('.close').addEventListener('click', function () {
+    rulesPopup.style.display = 'none';
+});
+
+document.querySelector('.close').addEventListener('click', function (event) {
+    if (event.target == document.getElementById('rules')) {
+        rulesPopup.style.display = 'none';
+    }
+});
+
+window.onclick = function(event) {
+    if (event.target == rulesPopup) {
+        rulesPopup.style.display = "none";
+    }
+}
