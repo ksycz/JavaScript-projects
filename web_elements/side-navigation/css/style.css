@@ -1,0 +1,55 @@
+/* The menu icon */
+.menuBox {
+    margin: 12px 20px auto auto;
+    float: right;
+}
+
+/* The side navigation menu */
+.sideNav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 80px; /* Place content 80px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sideNav */
+}
+
+/* The navigation menu links */
+.sideNav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sideNav a:hover {
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sideNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 60px;
+    color: white;
+}
+
+.fa-times-thin:before {
+	content: '\00d7';
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sideNav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sideNav {padding-top: 15px;}
+    .sideNav a {font-size: 18px;}
+}
