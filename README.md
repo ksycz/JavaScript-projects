@@ -8,4 +8,6 @@ You can see my version of the game live here: https://codepen.io/Ponorka/pen/wqJ
 
 ## Web Elements
 
-Slideshow - live version: https://codepen.io/Ponorka/pen/bMKRBe
+Slideshow: https://codepen.io/Ponorka/pen/bMKRBe
+Slideshow Gallery: https://codepen.io/Ponorka/pen/XqYaYW
+Side Navigation: https://codepen.io/Ponorka/pen/aGKLGL
