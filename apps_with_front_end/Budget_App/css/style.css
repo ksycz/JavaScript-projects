@@ -21,6 +21,7 @@ body {
 
 h1, h2, h3 {
     text-transform: uppercase;
+    text-align: center;
 }
 
 h1 {
@@ -31,6 +32,10 @@ h2, h3 {
     margin: .5rem 0;
 }
 
+h3 i {
+    color: #3F6378;
+}
+/* #3F6378 */
 /* Budget summary part */
 
 .top {
@@ -43,18 +48,41 @@ h2, h3 {
     color: #fff;
     padding: 1rem;
     margin: 2rem;
+    width: 40%;
 }
 
 .budget-details__values {
-    flex-grow: 1;
+    display: flex;
+    justify-content: space-around;   
+
 }
 
-.budget-details__values > div {
-    background-color: #ECEEF4;
-    padding: .5rem 0;
+.budget-details__values > div > div {
+    background-color: #BACDD9;
+    color: #fff;
+    padding: .5rem;
     display: flex;
     justify-content: space-around;
-    margin: 2rem;
+    margin: 1rem;
+}
+
+.budget-details__income--input > div, .budget-details__expenses--input > div {
+    padding: 1rem;
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.add__type, .add__description {
+    width: 70%;
+}
+
+.add__value {
+    width: 20%;
 }
 
 /* Bottom part */
@@ -68,6 +96,10 @@ h2, h3 {
     background-color: rgb(36,66,90, 0.7);
     border: 5px solid #fff;
     padding: 1rem;
+}
+
+.budget-details__add__container i {
+    /* color: #F4E4DC; */
 }
 
 .bottom .container {
