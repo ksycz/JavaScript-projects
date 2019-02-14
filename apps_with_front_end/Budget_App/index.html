@@ -3,92 +3,93 @@
     <head>
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+       
         <link type="text/css" rel="stylesheet" href="css/style.css">
-        <title>Budget App</title>
+        <title>Budgety</title>
     </head>
     <body>
-            <h2>Budget App</h2>
+
+        <!-- TO DO - currency converter -->
+        <!-- better dropdowns -->
+        <!-- hide togglw list for the list of added items -->
+        <!-- possibility of adding new categories -->
+        <!-- zablokovat moznost pridani minusovych cisel -->
+        <!--ukazat hlasku, kdy uzivatel nevyplni policko-->
+        <div>
         <div class="top">
-            <div class="budget-summary">
-                <div>
-                    <div class="budget-summary__title">
-                        Available in <span class="budget-summary__title--month">%Month%</span>:
+            <div class="budget">
+                <div class="budget__summary">
+                    <div class="budget__title">
+                        Available in <span class="budget__title--month">%Month%</span>:
                     </div>
-                    <h3 class="budget-card__value">+ 2,345.64</h3>
-                <!-- add counter for this number when user loads website and add -->
+                    <div class="budget__value">+ 2,345.64</div>
                 </div>
-                <div>
-                    <img src="" alt="">
+                <div class="budget__income clearfix">
+                    <div class="budget__income--text">Income <i class="fas fa-plus"></i></div>
+                    <div class="right">
+                        <div class="budget__income--value">+ 4,300.00</div>
+                        <div class="budget__income--percentage">&nbsp;</div>
+                    </div>
+                </div>
+                
+                <div class="budget__expenses clearfix">
+                    <div class="budget__expenses--text">Expenses <i class="fas fa-plus"></i></div>
+                    <div class="right clearfix">
+                        <div class="budget__expenses--value">- 1,954.36</div>
+                        <div class="budget__expenses--percentage">45%</div>
+                    </div>
                 </div>
             </div>
-
-
-                </div>
+        </div>
+        
         
         
         <div class="bottom">
-
-                <div class="budget-details__values">
-                        <div class="budget-details__income">
-                            <h3>Incomes <i class="fas fa-plus-square"></i></h3>
-                            <div>
-                                <div class="budget-details__income--value">+ 4,300.00</div>
-                                <div class="budget-details__income--percentage">&nbsp;</div>
-                            </div>
-                        <div class="budget-details__income--input">
-                            <div class="budget-details__add__container">
-                                    <i class="fas fa-window-close"></i>
-                                    <div class="input-row">
-                                        <select class="add__type">
-                                            <option value="inc" selected>Salary</option>
-                                            <option value="exp">Side projects</option>
-                                            <option value="exp">Translations</option>
-                                        </select>
-                                        <input type="number" class="add__value" placeholder="Value">
-                                        <i class="fas fa-check-square"></i>
-                                    </div>
-                                    <div class="input-row">
-                                        <input type="text" class="add__description" placeholder="Add description">
-                                        <input type="number" class="add__value" placeholder="Value">
-                                        <i class="fas fa-check-square"></i>
-                                    </div>
-                                </div> 
+            <div class="add">
+                <div class="add__container">   
+                    <div class="custom-select">                     
+                        <select class="add__type">
+                            <option value="inc" selected>Income</option>
+                            <option value="exp">Expense</option>
+                        </select>
                     </div>
-                </div> 
-                        
-                        <div class="budget-details__expenses">
-                            <h3>Expenses <i class="fas fa-plus-square"></i></h3>
-                            <div>
-                                <div class="budget-details__expenses--value">- 1,954.36</div>
-                                <div class="budget-details__expenses--percentage">45%</div>
-                            </div>
-                            <div class="budget-details__expenses--input">
-                                    <div class="budget-details__add__container">
-                                            <i class="fas fa-window-close"></i>
-                                            <div class="input-row">
-                                                <select class="add__type">
-                                                    <option value="inc" selected>Groceries</option>
-                                                    <option value="exp">Rent</option>
-                                                </select>
-                                                <input type="number" class="add__value" placeholder="Value">
-                                                <i class="fas fa-check-square"></i>
-                                            </div>
-                                            <div class="input-row">
-                                                <input type="text" class="add__description" placeholder="Add description">
-                                                <input type="number" class="add__value" placeholder="Value">
-                                                <i class="fas fa-check-square"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <!-- add loader to see how much many left -->
+                    <div class="add__item-details">
+                        <div class="custom-select">
+                            <select class="add__category--income">
+                                <option selected>Main salary</option>
+                                <option>Additional projects</option>
+                                <option>Other</option>
+                            </select>
                         </div>
+                        <!-- <div class="custom-select">
+                            <select class="add__category--expense">
+                                <option selected>Groceries</option>
+                                <option>Food outside</option>
+                                <option>Rent</option>
+                                <option>Bills</option>
+                                <option>Travelling</option>
+                                <option>Gifts</option>
+                                <option>Gasoline</option>
+                                <option>Charity</option>
+                                <option>Education</option>
+                                <option>Entertainment</option>
+                                <option>Clothes</option>
+                                <option>Other</option>
+                            </select>
+                        </div> -->
                     </div>
+                        <input type="text" class="add__description" placeholder="Add description">
+                        <input type="number" class="add__value" placeholder="Value">
+                        <button class="add__btn">Add</button>
+                    </div>
+                </div>
+            </div>
             
-            <div class="container">
-                <div class="income">                    
-                    <h3>Incomes</h3>
+            <div class="container clearfix">
+                <div class="income">
+                    <h2 class="icome__title">Income</h2>
+                    
                     <div class="income__list">
                        
                         <!--
@@ -97,7 +98,7 @@
                             <div class="right clearfix">
                                 <div class="item__value">+ 2,100.00</div>
                                 <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    <span class="item__delete--btn"><i class="fas fa-trash"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +108,7 @@
                             <div class="right clearfix">
                                 <div class="item__value">+ 1,500.00</div>
                                 <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    <span class="item__delete--btn"><i class="fas fa-trash"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -119,7 +120,8 @@
                 
                 
                 <div class="expenses">
-                    <h3>Expenses</h3>
+                    <h2 class="expenses__title">Expenses</h2>
+                    
                     <div class="expenses__list">
                        
                         <!--
@@ -129,7 +131,7 @@
                                 <div class="item__value">- 900.00</div>
                                 <div class="item__percentage">21%</div>
                                 <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                    <button class="item__delete--btn"><i class="fas fa-trash"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -138,9 +140,8 @@
                             <div class="item__description">Grocery shopping</div>
                             <div class="right clearfix">
                                 <div class="item__value">- 435.28</div>
-                                <div class="item__percentage">10%</div>
                                 <div class="item__delete">
-                                    <button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button>
+                                   <button class="item__delete--btn"><i class="fas fa-trash"></i></button>
                                 </div>
                             </div>
                         </div>
@@ -152,6 +153,8 @@
             
             
         </div>
+    </div>
+        <script src="js/custom-select.js"></script>
         <script src="js/app.js"></script>
     </body>
 </html>
