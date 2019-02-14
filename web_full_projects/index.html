@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./vendor/vegas/vegas.min.css">
+</head>
+<body>
+    <!-- TO DO: add loader and lazy loading, hambac, sass, container class -->
+    <header class="menu">
+        <div class="parallax-window introduction__image" data-parallax="scroll" data-image-src="">
+        <div class="menu__container">
+            <div class="menu__container--top">
+                <div class="menu__logo">
+                    <img  src="./img/logo.png" alt="Logo">
+                    <!-- TO DO: add parallax to logo a zafixovat sipku -->
+                </div>
+                <ul class="menu__links">
+                    <li>Offer</li>
+                    <li>Additional services</li>
+                    <li>Recommendations</li>
+                    <li>Blog</li>
+                    <li>Team</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    <div class="search">
+            <h1>Mountains Rangers</h1>
+            <div class="search__container">
+                <div class="search__box">
+                <div class="search__tabs">
+                    <p>Guided tours</p>
+                    <p>Accommodation</p>
+                    <p>Car rental</p>
+                </div>
+                <div class="search-filters">
+                    <input type="text" placeholder="From">
+                    <input type="text" placeholder="To">
+                    <input type="text" placeholder="Departure">
+                    <label for="">Duration</label>
+                    <select>
+                        <option value="one-week">1 week</option>
+                        <option value="two-weeks">2 weeks</option>
+                        <option value="three-weeks">3 weeks</option>
+                        <option value="four-weeks">4 weeks</option>
+                    </select>
+                </div>
+                <div class="search__box__footer">
+                    <div class="social-bar">
+                        <i class="fab fa-lg fa-facebook-square"></i>
+                        <i class="fab fa-lg fa-instagram"></i>
+                        <i class="fab fa-lg fa-twitter-square"></i>
+                    </div>
+                    <button class="search__btn">Search</button>
+                </div>
+            </div>
+                
+            </div>
+                </div>
+                <span class="toggle-icon">
+                        <i id="js-toggle" class="fas fa-3x fa-angle-double-up"></i>
+                    </span> 
+                 
+    </header>
+    
+    <section class="offer">
+        <h2>Standard offer</h2>
+        <div class="offer-boxes">
+            <div class="offer__box">
+                <h3>Easy peasy tour</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quo ullam exercitationem dolore maiores aliquam odit saepe inventore consequatur, nesciunt assumenda voluptate esse incidunt mollitia fuga alias tempore quae doloremque?</p>
+                <img src="./img/recreational.jpg" alt="Recreational">
+                <button class="search__btn">More details</button>
+            </div>
+            <div class="offer__box">
+                <h3>Adventure</h3>
+                <img src="./img/adventure.jpg" alt="Adventure">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum ducimus commodi iusto placeat repudiandae quia illo ex, dolores esse in quod consectetur, magnam quae delectus voluptatum magni neque nam nihil.</p>
+                <button class="search__btn">More details</button>
+            </div>
+            <div class="offer__box">
+                <h3>Pure madness</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto quo ullam exercitationem dolore maiores aliquam odit saepe inventore consequatur, nesciunt assumenda voluptate esse incidunt mollitia fuga alias tempore quae doloremque?</p>
+                <img src="./img/hardcore.jpg" alt="Hardcore">
+                <button class="search__btn">More details</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+            <h2>Additional services</h2>
+            <div class="services-boxes">
+                <div class="services-box">
+                    <p>Ikona</p>
+                    </p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, dolores repellat quisquam culpa, reiciendis placeat illum itaque ipsum, minima officiis assumenda. Rerum, officiis ipsa. Similique rerum cum nesciunt consectetur architecto.</p>
+                </div>
+                <div class="services-box">
+                    <p>Ikona</p>
+                    </p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, dolores repellat quisquam culpa, reiciendis placeat illum itaque ipsum, minima officiis assumenda. Rerum, officiis ipsa. Similique rerum cum nesciunt consectetur architecto.</p>
+                </div>
+                <div class="services-box">
+                    <p>Ikona</p>
+                    </p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, dolores repellat quisquam culpa, reiciendis placeat illum itaque ipsum, minima officiis assumenda. Rerum, officiis ipsa. Similique rerum cum nesciunt consectetur architecto.</p>
+                </div>
+            </div>
+    </section>
+    <section class="slide-show-1">
+     <div class="parallax-window offer-gallery--left" data-parallax="scroll"></div>
+            <!-- <div class="parallax-window offer-gallery--right" data-parallax="scroll"></div> -->
+    </section>
+     <!-- TO DO: add timer of clients -->
+    <section class="recommendations">
+       
+            <div class="recommendations__container"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dolor corrupti, a neque quibusdam id unde! Id, quas! Dolores, rerum repellat? Aliquam nihil dicta, sed quasi pariatur aspernatur eaque excepturi.</p></div>
+    </section>
+    
+    <section class="team">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi nostrum possimus vitae doloremque asperiores vel hic aspernatur fuga. Veniam similique maiores tempora enim a, doloremque nam atque facilis minima.</p>
+    </section>
+    <div class="parallax-window zoom2" data-parallax="scroll" data-image-src="./img/adventure.jpg"></div>
+    <footer>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sequi nostrum possimus vitae doloremque asperiores vel hic aspernatur fuga. Veniam similique maiores tempora enim a, doloremque nam atque facilis minima.</p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./vendor/vegas/vegas.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
