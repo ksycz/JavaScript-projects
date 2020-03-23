@@ -7,12 +7,12 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #4EDAC0, #D080E1);
+    /* background: linear-gradient(to right, #4EDAC0, #D080E1); */
+    background: url("img/background.jpg") no-repeat center;
 }
 
 .calculator-container {
-    /* background: url("img/background.png") no-repeat center;
-    background-size: cover; */
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(100px, auto) repeat(5, 100px);
@@ -24,24 +24,24 @@ body {
 .calculator-container > button {
     cursor: pointer;
     font-size: 2rem;
-    border: 1px solid #fff;
+    border: 1px solid #4EDAC0;
     outline: none;
     background: rgba(255, 255, 255, .5);
 }
 
 .calculator-container > button:hover {
-    background: rgba(255, 255, 255, .8);
+    background: rgba(78, 218, 192, .9);
 }
 
 .output {
     grid-column: 1 / -1;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(78, 218, 192, .5);
     color: #fff;
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
     flex-direction: column;
-    padding: 10px;
+    padding: 0px;
     word-wrap: break-word;
     word-break: break-all;
 }
@@ -58,4 +58,13 @@ body {
 
 .wide-btn {
     grid-column: span 2;
+}
+
+.credits {
+    position: fixed;
+    bottom: 0;
+    padding: 5px;
+    font-size: .7rem;
+    text-decoration: none;
+    color: gray;
 }
