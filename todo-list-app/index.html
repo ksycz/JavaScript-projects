@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get this stuff done!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/23032ab857.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="app-container">
+        <h1 class="title"><i class="fas fa-clipboard-list"></i> You can do it!</h1>
+        <div class="lists">
+            <div class="all-lists">
+                <div class="all-list__header">
+                    <h2 class="all-lists__title">My lists</h2>
+                    <!-- <p class="counter">3 lists</p> -->
+                </div>
+                <ul class="all-lists__list">
+                    <li class="active-list">Learning</li>
+                    <li>Playing</li>
+                    <li>Shopping</li>
+                </ul>
+
+                <form action="">
+                    <a class="create-list-btn" aria-label="create list btn"><i class="fas fa-folder-plus"></i></a>
+                    <input type="text" class="new-list" placeholder="New list name" aria-label="new list name" />
+                </form>
+            </div>
+            <div class="todo-list">
+                <div class="todo-list__header">
+                    <h2>Learning</h2>
+                    <!-- <p class="counter">3 tasks</p> -->
+                </div>
+                <div class="todo-list__body">
+                    <div class="tasks">
+                        <div class="task">
+                            <input type="checkbox" id="task-1" />
+                            <label for="task-1"><span class="custom-checkbox">Improve your JS</span></label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="task-2" />
+                            <label for="task-2"><span class="custom-checkbox">Learn React</span></label>
+                        </div>
+                        <div class="task">
+                            <input type="checkbox" id="task-3" />
+                            <label for="task-3"><span class="custom-checkbox">Ukulele</span></label>
+                        </div>
+                    </div>
+                    <div class="task-creator">
+                        <form action="">
+                            <a class="create-task-btn" aria-label="create taks btn"><i
+                                    class="fas fa-plus-circle"></i></a>
+                            <input type="text" class="new-task" placeholder="New task name"
+                                aria-label="new task name" />
+                        </form>
+                    </div>
+                    <div class="tasks-destroyer">
+                        <button class="btn-delete">Clear completed tasks</button>
+                        <button class="btn-delete">Delete list</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

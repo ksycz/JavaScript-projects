@@ -1,0 +1,95 @@
+*, *::before, *::after {
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url("./img/background.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+h1, h2 {
+    margin: 0;
+    text-align: center;
+    color: #243B69;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+ul {
+    margin: 0;
+}
+
+form {
+    white-space: nowrap;
+    margin-top: 20px;
+}
+
+i {
+    color: #243B69;
+    font-size: 1.3rem;
+}
+
+.app-container, .lists, .all-lists, .todo-list, button {
+    border-radius: 5px;
+}
+
+.app-container {
+    background:rgba(255,255,255, .8);
+    border: 2px solid #243B69;
+    margin-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(209,209,209,.3);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(209,209,209,.3);
+    box-shadow: 10px 10px 5px 0px rgba(209,209,209,.3);
+}
+
+.lists {
+    line-height: 1.7;
+    display: flex;
+    justify-content: space-around;
+    background: #F35D2B;
+}
+
+.all-lists, .todo-list {
+    background: #fff;
+    margin: 30px;
+    padding: 20px;
+}
+
+.all-lists {
+    list-style-type: circle;
+}
+
+.counter {
+    font-size: 1rem;
+}
+
+button {
+    border: none;
+    background: #243B69;
+    color: #fff;
+    padding: 10px;
+    margin: 3px;
+}
+
+input {
+    border: 1px solid #243B69;
+    padding: 7px 10px;
+}
+
+.tasks-destroyer {
+    margin-top: 20px;
+}
