@@ -37,3 +37,7 @@ https://www.youtube.com/watch?v=W7FaYfuwu70&t=405s
 Slideshow: https://codepen.io/Ponorka/pen/bMKRBe
 Slideshow Gallery: https://codepen.io/Ponorka/pen/XqYaYW
 Side Navigation: https://codepen.io/Ponorka/pen/aGKLGL
+
+## Weight Converter
+
+I created the weight converter (kilograms, grams, pounds and ounces) apps for practice.
